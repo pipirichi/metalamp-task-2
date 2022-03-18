@@ -1,9 +1,15 @@
 link(href='https://fonts.googleapis.com/icon?family=Material+Icons' 
 rel='stylesheet')
-.button 
-  button.button_click__background click me 
-  button.button_click__border click me 
-  button.button_click__text click me 
-  button.button_payment 
-    span.text перейти к оплате 
-    span.material-icons arrow_forward  
+
+mixin button(mode, text='', typeButton='button')
+  if mode=='button_payment'
+    button(class=mode, type=typeButton)
+      span.text= text
+      span.material-icons arrow_forward 
+  else  
+    button(class=mode, type=typeButton)= text
+
+//- +button('button_background', 'click me') // кнопка с фоном
+//- +button('button_border', 'click me') // кнопка с градиентной границей
+//- +button('button_text', 'click me') // кнопка в виде текста
+//- +button('button_payment', 'перейти к оплате') // большая кнопка со стрелкой

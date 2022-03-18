@@ -9,131 +9,115 @@ button {
   cursor: pointer;
 }
 
-.button {
-  margin-left: 20px;
+.button_background {
+  width: 99px;
+  height: 44px;
 
-  .button_click__background {
-    margin-top: 20px;
-    width: 99px;
-    height: 44px;
+  display: block;
 
-    display: block;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
 
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
-    border-radius: 22px;
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.button_border {
+  margin: 2px 2px 2px 2px;
+  width: 97px;
+  height: 42px;
+
+  position: relative;
+  display: block;
+
+  border-radius: 22px;
+  background-color: white;
+
+  color: #BC9CFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 34px;
+    z-index: -1;
+  }
 
-    &:active {
+  &:active {
+    &:before {
       opacity: 0.5;
     }
   }
+}
 
-  .button_click__border {
-    margin-top: 31px;
-    width: 97px;
-    height: 42px;
+.button_text {
+  width: 67px;
+  height: 15px;
 
-    position: relative;
-    display: block;
+  display: block;
 
-    border-radius: 22px;
-    background-color: white;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
 
-    color: #BC9CFF;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+  &:active {
+    color: rgba(31, 32, 65, 0.5);
+  }
+}
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: -2px;
-      bottom: -2px;
-      left: -2px;
-      right: -2px;
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-      border-radius: 34px;
-      z-index: -1;
-    }
+.button_payment {
+  width: 320px;
+  height: 44px;
 
-    &:active {
-      &:before {
-        content: "";
-        position: absolute;
-        top: -2px;
-        bottom: -2px;
-        left: -2px;
-        right: -2px;
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        border-radius: 34px;
-        z-index: -1;
-        opacity: 0.5;
-      }
-    }
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+
+  font-size: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .text {
+    margin-left: 44px;
+    max-width: 232px;
+    width: 100%;
   }
 
-  .button_click__text {
-    margin-top: 31px;
-    width: 67px;
-    height: 15px;
-
-    display: block;
-
-    color: #BC9CFF;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-
-    &:active {
-      color: rgba(31, 32, 65, 0.5);
-    }
-  }
-
-  .button_payment {
-    margin-top: 44px;
-    width: 320px;
+  .material-icons {
+    width: 44px;
     height: 44px;
 
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    border-radius: 22px;
-
-    font-size: 700;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    .text {
-      margin-left: 44px;
-      max-width: 232px;
-      width: 100%;
-    }
-
-    .material-icons {
-      width: 44px;
-      height: 44px;
-
-      font-family: 'Material Icons';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 24px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    justify-content: center;
   }
 }

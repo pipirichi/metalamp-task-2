@@ -1,1 +1,4 @@
-input(type="email" name="email" value="" placeholder="Email")
+mixin text-field(placeholder='', type='text')
+  input(placeholder=placeholder type=type class='text-field')
+
+//- +text-field('Email', 'email')
