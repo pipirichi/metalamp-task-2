@@ -1,0 +1,11 @@
+mixin rate-button(background)
+  - var n = 0;
+  .rate-button
+    while n < background
+      p.material-icons star
+      - n++
+    while n < 5
+      p.material-icons star_border
+      - n++
+
+//- +rate-button('4')

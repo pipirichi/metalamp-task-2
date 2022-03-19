@@ -1,0 +1,6 @@
+mixin toggle(name, text= '', type='checkbox')
+  label.toggle-style
+    input(type=type, name=name, value=value class='toggle')
+    = text 
+
+//- +toggle('toggle', 'Получать спецпредложения')
