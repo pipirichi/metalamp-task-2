@@ -2,7 +2,7 @@ mixin button(mode, text='', typeButton='button')
   if mode=='button-payment'
     button(class=mode, type=typeButton)
       span.button-paymen__text= text
-      span.material-icons arrow_forward 
+      span.material-icons.button-paymen__arrow arrow_forward 
   else  
     button(class=mode, type=typeButton)= text
 
