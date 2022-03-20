@@ -1,7 +1,7 @@
 mixin radio-buttons(name, value, text= '', type='radio')
-  label.radio-style
-    input(type=type, name=name, value=value class='radio-buttons')
+  label.radio
+    input(type=type, name=name, value=value class='radio__button')
     p= text 
 
-+radio-buttons('gender', 'man', 'Мужчина')
-+radio-buttons('gender', 'woman','Женщина')
+//- +radio-buttons('gender', 'man', 'Мужчина')
+//- +radio-buttons('gender', 'woman','Женщина')

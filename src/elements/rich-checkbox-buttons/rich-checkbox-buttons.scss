@@ -1,28 +1,31 @@
-.checkbox {
-  display: block;
+.rich-checkbox {
+  margin-bottom: 10px;
+  max-width: 270px;
 
-  .checkbox__button {
+  display: flex;
+
+  .rich-checkbox__button {
     appearance: none;
-  
-    margin: 0 6.5px 7.5px 0;
+
+    margin-right: 10px;
     width: 20px;
     height: 20px;
-  
+
     display: inline-block;
     position: relative;
-  
+
     background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-  
+
     &:hover {
       border: 1px solid #bb9cff9a;
     }
-  
+
     &:checked {
       border: 1px solid #BC9CFF;
-  
+
       &:before {
         content: "";
         margin: 3px 0 0 6px;
@@ -30,31 +33,37 @@
         height: 100%;
         max-width: 4px;
         max-height: 6px;
-  
+
         display: inline-block;
         position: absolute;
-  
+
         border-right: 2px solid;
         border-bottom: 2px solid;
         border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) 1;
-  
+
         transform: rotate(45deg);
       }
     }
   }
-  
-  p {
-    margin: 0 auto;
-    max-width: 194px;
-    width: 100%;
 
-    display: inline-block;
+  .conveniences {
+    max-width: 230px;
 
-    vertical-align: top;
+    .conveniences__title {
+      margin: 0px 7px 7px 0;
 
-    font-size: 14px;
-    line-height: 18.4px;
-    color: rgba(31, 32, 65, 0.5);
-    letter-spacing: 0.13px;
-  }  
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.75);
+      letter-spacing: 0.15px;
+    }
+
+    .conveniences__text {
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(31, 32, 65, 0.5);
+      letter-spacing: 0.15px;
+    }
+  }
 }

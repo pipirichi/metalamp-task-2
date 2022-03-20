@@ -1,0 +1,9 @@
+mixin rich-checkbox-buttons(name, value, title='', text= '', type='checkbox')
+  label.rich-checkbox
+    input(type=type, name=name, value=value class='rich-checkbox__button')
+    .conveniences
+      p.conveniences__title= title 
+      p.conveniences__text!= text 
+
+//- +rich-checkbox-buttons('conveniences', 'hallway', 'Широкий коридор', 'Ширина коридоров в номере <br /> не менее 91 см.')
+//- +rich-checkbox-buttons('conveniences', 'helper', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')

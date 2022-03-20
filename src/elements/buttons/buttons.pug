@@ -1,12 +1,12 @@
 mixin button(mode, text='', typeButton='button')
-  if mode=='button_payment'
+  if mode=='button-payment'
     button(class=mode, type=typeButton)
-      span.text= text
+      span.button-paymen__text= text
       span.material-icons arrow_forward 
   else  
     button(class=mode, type=typeButton)= text
 
-//- +button('button_background', 'click me') // кнопка с фоном
-//- +button('button_border', 'click me') // кнопка с градиентной границей
-//- +button('button_text', 'click me') // кнопка в виде текста
-//- +button('button_payment', 'перейти к оплате') // большая кнопка со стрелкой
+//- +button('button-background', 'click me') // кнопка с фоном
+//- +button('button-border', 'click me') // кнопка с градиентной границей
+//- +button('button-text', 'click me') // кнопка в виде текста
+//- +button('button-payment', 'перейти к оплате') // большая кнопка со стрелкой

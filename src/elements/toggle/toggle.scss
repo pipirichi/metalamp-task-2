@@ -1,4 +1,4 @@
-.toggle-style {
+.toggle {
   // position: relative;
 
   display: inline-block;
@@ -8,7 +8,7 @@
   color: rgba(31, 32, 65, 0.75);
   letter-spacing: 0.18px;
 
-  .toggle {
+  .toggle__button {
     appearance: none;
 
     margin-right: 10.5px;

@@ -9,7 +9,7 @@ button {
   cursor: pointer;
 }
 
-.button_background {
+.button-background {
   width: 99px;
   height: 44px;
 
@@ -29,7 +29,7 @@ button {
   }
 }
 
-.button_border {
+.button-border {
   margin: 2px 2px 2px 2px;
   width: 97px;
   height: 42px;
@@ -65,7 +65,7 @@ button {
   }
 }
 
-.button_text {
+.button-text {
   width: 67px;
   height: 15px;
 
@@ -82,7 +82,7 @@ button {
   }
 }
 
-.button_payment {
+.button-payment {
   width: 320px;
   height: 44px;
 
@@ -100,7 +100,7 @@ button {
   align-items: center;
   justify-content: space-between;
 
-  .text {
+  .button-paymen__text {
     margin-left: 44px;
     max-width: 232px;
     width: 100%;
