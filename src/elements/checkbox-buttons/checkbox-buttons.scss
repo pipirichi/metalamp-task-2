@@ -2,11 +2,12 @@
   display: block;
 
   .checkbox__button {
-    appearance: none;
-  
-    margin: 0 6.5px 7.5px 0;
     width: 20px;
     height: 20px;
+
+    margin: 0 6.5px 6.6px 0;
+
+    appearance: none;
   
     display: inline-block;
     position: relative;
@@ -55,6 +56,6 @@
     font-size: 14px;
     line-height: 18.4px;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: 0.13px;
+    letter-spacing: 0.1px;
   }  
 }

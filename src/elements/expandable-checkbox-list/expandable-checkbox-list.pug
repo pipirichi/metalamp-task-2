@@ -1,0 +1,18 @@
+include  ../checkbox-buttons/checkbox-buttons.pug
+
+mixin expandable-checkbox-list(text='')
+  .added-conveniences
+    .added-conveniences__list-name 
+      p=text 
+      button.material-icons.slide-toggle#dd expand_more
+  .added-conveniences__list#list
+    +checkbox-buttons('conveniences', 'breakfast', 'Завтрак')
+    +checkbox-buttons('conveniences', 'desk', 'Письменный стол')
+    +checkbox-buttons('conveniences', 'feeding-chair', 'Стул для кормления')
+    +checkbox-buttons('conveniences', 'crib', 'Кроватка')
+    +checkbox-buttons('conveniences', 'TV', 'Телевизор')
+    +checkbox-buttons('conveniences', 'shampoo', 'Шампунь')
+    +checkbox-buttons('conveniences', 'TV', 'Телевизор')
+    +checkbox-buttons('conveniences', 'shampoo', 'Шампунь')
+
+//- +expandable-checkbox-list('Дополнительные удобства')
