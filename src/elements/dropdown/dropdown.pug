@@ -1,5 +1,5 @@
-mixin dropdown(text='') 
-  .dropdown 
+mixin dropdown(text='', addClass='') 
+  .dropdown(class=' ' + addClass)
     p=text 
     button.material-icons expand_more
 
