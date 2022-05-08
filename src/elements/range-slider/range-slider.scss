@@ -1,0 +1,52 @@
+@import "../../../node_modules/ion-rangeslider/css/ion.rangeSlider";
+
+.slider {
+  width: 266px;
+  margin-top: 10px;
+
+  position: relative;
+
+  .irs--flat .irs-line {
+    top: 25px;
+    height: 4px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 3px;
+  }
+
+  .irs--flat .irs-bar {
+    top: 25px;
+    height: 6px;
+
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 3px;
+  }
+
+  .irs--flat .irs-handle {
+    top: 20px;
+    width: 16px;
+    height: 16px;
+
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+  }
+
+  .irs--flat .irs-handle>i:first-child {
+    display: none;
+  }
+
+  .slider__count {
+    position: absolute;
+    bottom: 38px;
+    right: 0.5px;
+
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: rgba(31, 32, 65, 0.5);
+  }
+}
